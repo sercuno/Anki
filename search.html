@@ -15,10 +15,12 @@
 <body>
     <nav>
         <div>
-            <span id="search" contenteditable></span>
+            <i onclick="history.back()" class="fas fa-chevron-left"></i>
+            <span id="search" spellcheck="false" type="submit" contenteditable></span>
             <i onclick="search()" class="fas fa-search"></i>
         </div>
     </nav>
+    <span id="loading">Searching</span>
     <ul id="list">
 
     </ul>
