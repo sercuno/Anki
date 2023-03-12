@@ -6,14 +6,15 @@ body {
     padding: 10px;
     font-family: 'Manrope', sans-serif;
 }
-h2 {
-    
-}
+
 nav {
     display: flex;
     justify-content: space-between;
 }
-nav h2 {
+nav h6 {
     display: inline;
     margin: 7px;
+}
+nav i {
+    cursor: pointer;
 }
