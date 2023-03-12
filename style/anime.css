@@ -10,6 +10,7 @@ section div {
 section div img {
     max-width: 40vw;
     max-height: 300px;
+    min-width: 175px;
     border-radius: 5px;
 }
 #title {
@@ -38,12 +39,16 @@ h5 {
 #list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
 }
 #list li {
+   min-width: 50px;
+    text-align: center;
+    background-color: #fff;
     border-radius: 4px;
     list-style-type: none;
-    margin: 5px;
-    padding: 7px;
-    background-color: #fff;
+    margin: 4px;
+    padding: 4px;
     color: black;
+    cursor: pointer;
 }
