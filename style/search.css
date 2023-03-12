@@ -27,7 +27,8 @@ nav span:focus {
 }
 nav i {
     color: black;
-    padding: 4px;
+    font-size: large;
+    padding: 7px;
     cursor: pointer;
 }
 nav i:hover {
