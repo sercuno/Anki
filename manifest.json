@@ -1,0 +1,19 @@
+{
+    "short_name": "Anki",
+    "name": "Anki",
+    "icons": [
+      {
+        "src": "logo.png",
+        "type": "image/png",
+        "sizes": "534x534"
+      }
+    ],
+    "description":"Anime PWA",
+    "lang":"en",
+    "start_url": "https://avi-rana-1718.github.io/Anki/",
+    "background_color": "#4375F5",
+    "theme_color": "#4375F5",
+    "display": "standalone",
+    "scope": "https://avi-rana-1718.github.io/Anki/"
+    
+  }

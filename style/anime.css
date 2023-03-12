@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+section {
+    display: flex;
+}
+section div {
+    padding: 10px;
+}
+section div img {
+    max-width: 50vw;
+    max-height: 300px;
+    border-radius: 5px;
+}
+#title {
+    font-family: 'Sora', sans-serif;
+}
+h5 {
+    font-family: 'Sora', sans-serif;
+}
+#fab {
+    position: fixed;
+    bottom:0;
+    right: 0;
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: black;
+    padding: 20px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+#list {
+    display: flex;
+    flex-wrap: wrap;
+}
+#list li {
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    background-color: #fff;
+    color: black;
+}
