@@ -11,7 +11,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-nav h6 {
+nav h5 {
     display: inline;
     margin: 7px;
 }
