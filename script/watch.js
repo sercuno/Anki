@@ -13,3 +13,14 @@ fetch(`https://heavenlyaccomplishedcubase.avirana2.repl.co/url?id=${id}&ep=${ep}
 });
 
 document.getElementById("ep").innerHTML=`Episode ${ep}`;
+
+
+localStorage.setItem(`${id}-epNumber`, ep);
+if((localStorage.getItem("list")!=null)&&(localStorage.getItem("list").includes(id)==false)) {
+    localStorage.setItem('list', `${localStorage.getItem("list")} | ${id}`);
+} else {
+    localStorage.setItem('list', `${id}`);
+}
+
+
+console.log(localStorage.getItem("list"));
