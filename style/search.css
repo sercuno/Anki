@@ -50,6 +50,7 @@ nav i:hover {
     padding: 0;
     flex-direction: column;
     width: 160px;
+    height: 250px;
     align-items: center;
 }
 #list li:hover {
