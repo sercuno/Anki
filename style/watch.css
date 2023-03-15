@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+}
+
+iframe {
+    height: 30vh;
+    background-color: #000;
+}
+#title, #ep {
+    margin: 10px;
+}

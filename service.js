@@ -89,3 +89,9 @@ self.addEventListener("fetch", (event) => {
   // will be handled by the browser as if there were no service
   // worker involvement.
 });
+
+caches.open("pwa-assets")
+.then(cache => {
+  cache.add("style/index.css"); // it stores only one resource
+  cache.addAll(["index.css", "script/fetch.js"]); // it stores two resources
+});

@@ -55,3 +55,8 @@ li {
 li.watched {
     background-color: #33A3EC;
 }
+#desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 160px;
+}
