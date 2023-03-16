@@ -9,3 +9,15 @@ iframe {
 #title, #ep {
     margin: 10px;
 }
+#source {
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+#source li {
+    background-color: #fff;
+    padding: 7px;
+    margin: 5px;
+    color: #000;
+}

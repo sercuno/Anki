@@ -1,6 +1,6 @@
 var data = localStorage.getItem("list").split(" | ");
 
-console.log(data[0]);
+console.log(localStorage.getItem("list"));
 
 // localStorage.clear();
 

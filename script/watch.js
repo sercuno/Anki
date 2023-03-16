@@ -8,26 +8,36 @@ fetch(`https://heavenlyaccomplishedcubase.avirana2.repl.co/url?id=${id}&ep=${ep}
 .then((data) => {
     console.log(data);
     document.getElementById("vid").src=data[0].servers[3].iframe;
-
+    for(var i=0;i<data[0].servers.length;i++) {
+        var ul = document.getElementById("source");
+        var li = document.createElement("li");
+        li.setAttribute("onclick", `document.getElementById("vid").src = '` + data[0].servers[i].iframe + "'");
+        li.insertAdjacentHTML('beforeend', `${data[0].servers[i].name}`);
+        ul.appendChild(li);
+    }
 
 });
 
 fetch(`https://heavenlyaccomplishedcubase.avirana2.repl.co/info?id=${id}`)
 .then((response) => response.json())
-.then((res) => {
-    document.getElementById("title").innerHTML=res[0].title;
-
+.then((data) => {
+    document.getElementById("title").innerHTML=data[0].title;
 });
 
 document.getElementById("ep").innerHTML=`Episode ${ep}`;
 
 
 localStorage.setItem(`${id}-epNumber`, ep);
-if((localStorage.getItem("list")!=null)&&(localStorage.getItem("list").includes(id)==false)) {
-    localStorage.setItem('list', `${localStorage.getItem("list")} | ${id}`);
+if(localStorage.getItem("list")!=null) {
+    localStorage.setItem('list', localStorage.getItem("list")+ ` | ${id}`);
 } else {
     localStorage.setItem('list', `${id}`);
 }
 
 
 console.log(localStorage.getItem("list"));
+
+function set(video) {
+    document.getElementById("vid").src=video;
+
+}
