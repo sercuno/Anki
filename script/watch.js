@@ -7,11 +7,18 @@ fetch(`https://heavenlyaccomplishedcubase.avirana2.repl.co/url?id=${id}&ep=${ep}
 .then((response) => response.json())
 .then((data) => {
     console.log(data);
-    document.getElementById("vid").src=data[0].servers[3].iframe;
+    document.getElementById("vid").src=data[0].servers[0].iframe;
     for(var i=0;i<data[0].servers.length;i++) {
         var ul = document.getElementById("source");
         var li = document.createElement("li");
-        li.setAttribute("onclick", `document.getElementById("vid").src = '` + data[0].servers[i].iframe + "'");
+
+        
+        var src=data[0].servers[i].iframe;
+        if(src.includes('https://')!=true) {
+            src='https://' + src;
+        }
+
+        li.setAttribute("onclick", `document.getElementById("vid").src = '` + src + "'");
         li.insertAdjacentHTML('beforeend', `${data[0].servers[i].name}`);
         ul.appendChild(li);
     }
@@ -28,7 +35,7 @@ document.getElementById("ep").innerHTML=`Episode ${ep}`;
 
 
 localStorage.setItem(`${id}-epNumber`, ep);
-if(localStorage.getItem("list")!=null) {
+if((localStorage.getItem("list")!=null) && (localStorage.getItem("list").includes(id)!=true)) {
     localStorage.setItem('list', localStorage.getItem("list")+ ` | ${id}`);
 } else {
     localStorage.setItem('list', `${id}`);

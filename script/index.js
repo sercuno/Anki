@@ -10,8 +10,9 @@ for(var i=0;i<data.length;i++) {
     .then((res) => {
         var ul = document.getElementById("list");
         var li = document.createElement("li");
-        li.insertAdjacentHTML('beforeend', `<img src='${res[0].img}'> ${res[0].title}`);
+        li.insertAdjacentHTML('beforeend', `${res[0].title}`);
         li.setAttribute("onclick", `window.location.href='anime.html?id=${res[0].id}';`);
+        li.setAttribute("style", `order:${i}; background-image:url("${res[0].img}");`);
     ul.appendChild(li);
     });
 }
