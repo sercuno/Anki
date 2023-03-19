@@ -11,7 +11,8 @@ var totalEp, title;
             var ul = document.getElementById("list");
             var li = document.createElement("li");
             li.setAttribute("onclick", `window.location.href='anime.html?id=${data[i].id}';`);
-            li.insertAdjacentHTML('beforeend', `<img src='${data[i].img}'> ${data[i].title}`);
+            li.insertAdjacentHTML('beforeend', `${data[i].title}`);
+            li.setAttribute("style", `background-image:url("${data[i].img}");`);
             ul.appendChild(li);
         }
     

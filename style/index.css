@@ -16,5 +16,8 @@ nav h5 {
     margin: 7px;
 }
 nav i {
+    margin: 4px;
+    font-size: large;
+    padding: 9px;
     cursor: pointer;
 }
