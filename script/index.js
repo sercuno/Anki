@@ -13,5 +13,6 @@ for(var i=0;i<data.length;i++) {
         li.setAttribute("onclick", `window.location.href='anime.html?id=${res[0].id}';`);
         li.setAttribute("style", `order:${i}; background-image:url("${res[0].img}");`);
     ul.appendChild(li);
+    document.getElementById("loader").style.display="none";
     });
 }

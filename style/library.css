@@ -1,3 +1,7 @@
+
+* {
+    transition: all 0.3s;
+}
 #list {
     display: flex;
     list-style-type: none;
