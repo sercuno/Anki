@@ -2,7 +2,8 @@ let searchParams = new URLSearchParams(window.location.search);
 var id = searchParams.get('id');
    
 var totalEp, title;
-   
+
+
    fetch(`https://heavenlyaccomplishedcubase.avirana2.repl.co/info?id=${id}`)
     .then((response) => response.json())
     .then((data) => {
@@ -25,7 +26,7 @@ var totalEp, title;
             li.appendChild(document.createTextNode(i));
             ul.appendChild(li);
         }
-    
+        
     });
 
 

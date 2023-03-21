@@ -2,7 +2,6 @@ var data = localStorage.getItem("list").split(" | ");
 
 console.log(localStorage.getItem("list"));
 
-// localStorage.clear();
 
 for(var i=0;i<data.length;i++) {
     fetch(`https://heavenlyaccomplishedcubase.avirana2.repl.co/info?id=${data[i]}`)

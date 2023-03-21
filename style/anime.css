@@ -31,10 +31,10 @@ h5 {
     justify-content: center;
     align-items: center;
     font-size: larger;
-    color: black;
+    color: #fff;
     padding: 20px;
     border-radius: 100%;
-    background-color: #fff;
+    background-color: #282828;
 }
 #list {
     display: flex;
